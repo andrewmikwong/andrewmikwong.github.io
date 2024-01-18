@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+  <head><script type="text/javascript" src="/_static/js/bundle-playback.js?v=1WaXNDFE" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="/_static/js/ruffle.js" defer="true"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://www.eecs.umich.edu/courses/eecs588/readings.html","20170701211815","https://web.archive.org/","web","/_static/",
+	      "1498943895");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>COMP 790 - 184 - Schedule</title>
+    <meta charset="utf-8">
+    <link href="/web/20170701211815cs_/https://www.eecs.umich.edu/courses/eecs588/static/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="top">
+      <h1>Hardware Security and Side-Channels</h1>
+      <h2>COMP 790 &ndash; 184 &ndash; Spring 2024</h2>
+ 
+    </div>
+    <div id="main">
+      <style>
+ul.resp {
+  margin-bottom: 0;
+}
+ul.resp > li {
+  margin: 8pt;
+}
+
+ul.outline {
+  margin-top: 6pt;
+  counter-reset: list;
+  list-style-type: upper-alpha;
+}
+ul.outline > li {
+  margin: 6pt;
+}
+ul.outline ol li:first-child {
+  margin-top: 4pt;
+}
+
+ul.outline ol li {
+  list-style: none;
+}
+ul.outline ol li:before {
+  counter-increment: list;
+  content: "(" counter(list) ") "
+}
+
+.reading a:visited { color: #039; }
+
+.reading h2 {
+  clear: both;
+  counter-increment: week;
+  text-align: center;
+  font-size: 1.25em;
+  background-color: #f6d565;
+  padding: 2.5pt 5pt;
+  margin: 0;
+  border-top: 2px solid #ea2;
+  border-bottom: 2px solid #ea2;
+}
+
+.reading h3 {
+  margin: 0;
+  padding-left: 12.5pt;
+  padding-top: 10pt;
+  padding-bottom: 2.5pt;
+  font-size: 1.08em;
+}
+.reading span.note:before {
+  content: " \2014\a0";
+  color: black;
+}
+
+.reading span.note {
+  font-style: italic;
+  color:#cc0000;
+}
+
+.reading > div {  
+   float: left;
+   width: 50%;
+}
+
+.reading ul {
+   margin: 0;
+   padding: 5pt;
+   counter-reset: list;
+}
+
+.reading li {
+  list-style: none;
+  margin: 2.5pt 0 2.5pt 0;
+  line-height: 1.25em;
+  padding: 5pt 10pt 5pt 25pt;
+  background-color: white;
+  position: relative;
+  counter-increment: list;
+  border: 2px solid white;
+}
+
+
+.reading li:before {
+  content: counter(list) ".";
+  left: 10pt;
+  position: absolute;
+  width: 15pt;
+}
+
+.reading .opt li:before {
+  content: none;
+}
+
+.reading ul.opt {
+  margin-bottom: 10pt;
+  padding-top: 0;
+  list-style: none;
+}
+
+.reading .opt li {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+  text-indent: -15pt;
+  list-style: inherit;
+  font-size: 0.93em;
+  background-color: inherit;
+  color: #222;
+}
+
+.reading ul:before {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.67em;
+  letter-spacing: 1px;
+  color: #808080;
+  margin-left: 2.5pt;
+  line-height: 1em;
+}
+
+.reading ul.opt:before {
+  padding-left:7.5pt;
+  content: "Recommended";
+}
+
+div.reading ul li a {
+  font-weight: bold;
+}
+</style>
+<b>Instructor:</b> Andrew Kwong
+<br>
+<b>Contact:</b> andrew@cs.unc.edu
+<br>
+<b>Class Meetings:</b> Tuesday/Thursday 9:30-10:45AM, SN11
+<br>
+<b>Office Hours</b> Thursday 2:00-3:00PM, in FB340
+<br>
+<a href="comp790-184/syllabus.pdf">Syllabus</a>
+
+<p> The goal of this course is to prepare students for a world where hardware vulnerabilities can leak secrets to software-only attackers. Students will read cutting-edge research papers and complete lab assignments that will guide them towards conducting state-of-the-art side-channel attacks against real hardware. This course will practically demonstrate the pitfalls of widely adopted modern hardware design decisions, and will prepare students to design hardware and software resilient against such attacks.
+
+</p>
+
+<h3> Course Structure </h3> Grades will be based upon the following:
+
+<p> <b>Class Participation (10%) </b> </p>
+<p> Students are expected to contribute to class discussions following paper presentations. Students should be able to ask insightful questions and demonstrate that they have read and understand the assigned readings. They will also be expected to come prepared with a short review of the paper, pinpointing the paper’s strengths and weaknesses. </p>
+
+<p> <b>Paper Presentations (15%) </b> </p>
+<p> Students will give conference style talks on assigned papers. They will prepare slides and a 20 minute presentation on the papers.</p>
+<p> <b>Lab Assignments (75%) </b> </p>
+<p> Students will complete programming-oriented lab assignments that are designed to guide them towards carrying out real-world attacks on hardware. There will be three in total, focused on providing students with an opportunity to put theory into practice. </p>
+
+<h3> Acknowledgements </h3> This course is based upon MIT's <a href="https://shd.mit.edu">6.590</a> course. Much thanks to Mengjia Yan and her course staff for their hard work on starting this!
+<a name="list"></a>
+<h3>Schedule</h3>
+
+<div class="reading">
+
+  <a name="week1"></a>
+  <h2>Week 1</h2>
+  <div>
+    <h3>
+    </h3>
+  
+  </div>
+  <div>
+    <h3>
+      Thursday, January 18 
+	&mdash; Lecture: Cache Side-Channels
+    </h3>
+ <!--   <span class="note">
+    <a href="comp790-149/comp790-lecture2.pdf">Slides</a>
+    </span>
+ -->
+    
+  </div>
+  
+  <a name="week2"></a>
+  <h2>Week 2</h2>
+  <div>
+    <h3>
+      Tuesday, January 23 
+	  &mdash; Lecture: Cache Side-Channels cont.
+    </h3>
+  </div>
+  <div>
+    <h3>
+      Thursday, January 25
+	  &mdash; Paper Discussion
+    </h3>
+    <ul>
+      <li>
+        <a href="https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/yarom">FLUSH+RELOAD: A High Resolution, Low Noise, L3 Cache Side-Channel Attack</a>.
+        USENIX Security 2014
+      </li>
+     
+    </ul>
+
+  </div>
+  
+  <a name="week3"></a>
+  <h2>Week 3</h2>
+  <div>
+    <h3>
+      Tuesday, January 30
+      	&mdash; Paper Discussion
+    </h3>
+    <ul>
+      <li>
+        <a href="https://www.computer.org/csdl/proceedings-article/sp/2019/666000a039/1dlwkwPrlCw">Theory and Practice of Finding Eviction Sets</a>. Oakland 2019
+        
+      </li>
+     
+    </ul>
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, February 1
+      &mdash; Paper Discussion
+    </h3>
+    <ul>
+      <li>
+	      <a href="http://palms.ee.princeton.edu/system/files/SP_vfinal.pdf">Last-Level Cache Side-Channel Attacks are Practical</a>
+	      . Oakland 2015
+      </li>
+    </ul>
+    
+  </div>
+  <a name="week4"></a>
+  <h2>Week 4</h2>
+  <div>
+    <h3>
+      Tuesday, February 6
+	&mdash; Lecture: Transient Execution Attacks
+    </h3>
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, February 8
+	  &mdash; Paper Discussion
+    </h3>
+    <ul>
+      <li>
+	      <a href="https://meltdownattack.com/">Spectre Attacks: Exploiting Speculative Execution</a>
+	      . Oakland 2019
+      </li>
+    </ul>
+    
+  </div>
+  <a name="week5"></a>
+  <h2>Week 5</h2>
+  <div>
+    <h3>
+      Tuesday, February 13
+    </h3>
+    <span class="note">Well-being day. No Class.</span>
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, February 15
+      	&mdash; Paper Discussion
+    </h3>
+    <ul>
+      <li>
+	      <a href="https://mdsattacks.com/">RIDL: Rogue In-Flight Data Load</a>
+        . Oakland 2019
+      </li>
+    </ul>
+    
+  </div>
+  
+
+  <a name="week6"></a>
+  <h2>Week 6</h2>
+  <div>
+    <h3>
+      Tuesday, February 20
+      	&mdash; Lecture: Side-Channel Defenses
+    </h3>
+  </div>
+  <div>
+    <h3>
+      Thursday, February 22
+      &mdash; Paper Discussion
+    </h3>
+    <ul>
+      <li>
+	      <a href="https://www.computer.org/csdl/proceedings-article/sp/2021/893400a613/1oak9bcdJgQ">Hardware-Software Contracts for Secure Speculation</a>
+        . Oakland 2021
+    </ul>
+    
+  </div>
+  
+  
+  <a name="week7"></a>
+  <h2>Week 7</h2>
+  <div>
+    <h3>
+      Tuesday, February 27
+	  &mdash; Paper Discussion
+    </h3>
+	<ul>
+      <li>
+	      <a href="https://eprint.iacr.org/2018/418.pdf">DAWG: A Defense Against Cache Timing Attacks in Speculative Execution Processors</a>
+        . MICRO 2018
+      </li>
+    </ul>
+   
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, February 29
+	  &mdash; Paper Discussion
+    </h3>
+    <ul>
+      <li>
+	      <a href="http://iacoma.cs.uiuc.edu/iacoma-papers/micro19_2.pdf">Speculative Taint Tracking (STT): A Comprehensive Protection for Speculatively Accessed Data</a>
+        . MICRO 2019
+      </li>
+    </ul>
+    
+  </div>
+  
+  
+  <a name="week8"></a>
+  <h2>Week 8</h2>
+  <div>
+    <h3>
+      Tuesday, March 5
+     &mdash; Lecture: Hardware Security Modules
+      
+    </h3>
+    </div>
+  <div>
+    <h3>
+      Thursday, March 7
+     &mdash; Paper Discussion
+     
+    </h3>
+    <ul>
+      <li>
+	      <a href="https://www.usenix.org/conference/usenixsecurity18/presentation/han">A Bad Dream: Subverting Trusted Platform Module While You Are Sleeping</a>
+        . USENIX Security 2018
+      </li>
+    </ul>
+  </div>
+  
+  <a name="week9"></a>
+  <h2>Week 9</h2>
+  <div>
+    <h3>
+      Tuesday, March 12
+    </h3>
+    <span class="note">Spring Break. No Class.</span>
+  </div>
+  <div>
+    <h3>
+      Thursday, March 14
+
+    </h3>
+    <span class="note">Spring Break. No Class.</span>
+  </div>
+
+  <a name="week10"></a>
+  <h2>Week 10</h2>
+  <div>
+    <h3>
+      Tuesday, March 19
+      &mdash; Lecture: Rowhammer
+    </h3>
+  </div>
+  <div>
+    <h3>
+      Thursday, March 21
+      &mdash; Paper Discussion
+    </h3>
+    <ul>
+        <li>
+		<a href="https://www.usenix.org/conference/osdi18/presentation/konoth">ZebRAM: Comprehensive and Compatible Software Protection Against Rowhammer Attacks</a>
+        . OSDI 2018
+      </li>
+    </ul>
+    
+  </div>
+  
+  <a name="week11"></a>
+  <h2>Week 11</h2>
+  <div>
+    <h3>
+      Tuesday, March 26
+      &mdash; Paper Discussion
+    </h3>
+    <ul>
+      <li>
+	      <a href="https://microarch.org/micro53/papers/738300a001.pdf">Graphene: Strong yet Lightweight Row Hammer Protection</a>
+       . MICRO 2020 
+      </li>
+    </ul>
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, March 28
+    </h3>
+    <span class="note">Well-being Day. No Class.</span>
+    
+  </div>
+  
+  <a name="week12"></a>
+  <h2>Week 12</h2>
+  <div>
+    <h3>
+      Tuesday, April 2
+      &mdash; Lecture: Trusted Execution Environments
+    </h3>
+  </div>
+  <div>
+    <h3>
+      Thursday, April 4
+      &mdash; Paper Discussion
+    </h3>
+    <ul>
+      <li>
+	      <a href="https://foreshadowattack.eu/">FORESHADOW: Extracting the Keys to the Intel SGX Kingdom with  Transient Out-of-Order Execution</a>
+        . USENIX Security 2018
+      </li>
+    </ul>
+    </div>
+
+  <a name="week13"></a>
+  <h2>Week 13</h2>
+  <div>
+    <h3>
+      Tuesday, April 9
+      &mdash; Paper Discussion
+    <ul>
+      <li>
+	      <a href="https://n.ethz.ch/~sshivaji/publications/keystone_eurosys20.pdf">Keystone: An Open Framework for Architecting Trusted Execution Environments</a>
+        . EuroSys 2020
+      </li>
+    </ul>
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, April 11
+      &mdash; Lecture: Memory Safety
+    </h3>
+    
+  </div>
+
+  <a name="week14"></a>
+  <h2>Week 14</h2>
+  <div>
+    <h3>
+      Tuesday, April 16
+      	&mdash; Paper Discussion
+    </h3>
+    <ul>
+      <li>
+	      <a href="https://comsec.ethz.ch/wp-content/files/blindside_ccs20.pdf">Speculative Probing: Hacking Blind in the Spectre Era</a>
+       . CCS 2020 
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h3>
+      Thursday, April 18
+       &mdash; Lecture: Fuzzing
+    </h3>
+    
+  </div>
+
+  <a name="week15"></a>
+  <h2>Week 15</h2>
+  <div>
+    <h3>
+      Tuesday, April 23
+    &mdash; Paper Discussion
+
+    </h3>
+    <ul>
+      <li>
+	      <a href="https://storage.googleapis.com/gweb-research2023-media/pubtools/pdf/51d0986b48ce045b3412ca568a006cd4a5b8cb2f.pdf">SiliFuzz: Fuzzing CPUs by proxy</a>
+       . Google Tech Report 2021 
+      </li>
+    </h3>
+  </div>
+  <div>
+    <h3>
+      Thursday, April 25
+    </h3>
+    &mdash; Guest Lecture
+  </div>
+
+  <a name="week16"></a>
+  <h2>Week 16</h2>
+  <div>
+    <h3>
+      Tuesday, April 30
+    </h3>
+     &mdash; Guest Lecture
+  </div>
+</div>
+
+<br style="clear:both"/>
+
+
+    </div>
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '52d47937eddd5b3794000063');
+        t.src = '//web.archive.org/web/20170701211815/https://secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+  </body>
+</html>
+<!--
+     FILE ARCHIVED ON 21:18:15 Jul 01, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:30:58 Aug 17, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 197.268
+  exclusion.robots: 0.123
+  exclusion.robots.policy: 0.113
+  cdx.remote: 0.058
+  esindex: 0.008
+  LoadShardBlock: 146.58 (3)
+  PetaboxLoader3.datanode: 68.678 (4)
+  load_resource: 46.726
+  PetaboxLoader3.resolve: 27.516
+-->
