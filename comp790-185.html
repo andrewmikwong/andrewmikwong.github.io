@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+  <!-- (c) 2015 J. Alex Halderman -->
+  <head><script type="text/javascript" src="/_static/js/bundle-playback.js?v=1WaXNDFE" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="/_static/js/ruffle.js" defer="true"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://www.eecs.umich.edu/courses/eecs588/readings.html","20170701211815","https://web.archive.org/","web","/_static/",
+	      "1498943895");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>COMP 790 - 185 - Reading List</title>
+    <meta charset="utf-8">
+    <link href="/web/20170701211815cs_/https://www.eecs.umich.edu/courses/eecs588/static/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="top">
+      <h1>Research Topics in Computer Security</h1>
+      <h2>COMP 790 &ndash; 149 &ndash; Fall 2024</h2>
+ 
+    </div>
+    <div id="main">
+      <style>
+ul.resp {
+  margin-bottom: 0;
+}
+ul.resp > li {
+  margin: 8pt;
+}
+
+ul.outline {
+  margin-top: 6pt;
+  counter-reset: list;
+  list-style-type: upper-alpha;
+}
+ul.outline > li {
+  margin: 6pt;
+}
+ul.outline ol li:first-child {
+  margin-top: 4pt;
+}
+
+ul.outline ol li {
+  list-style: none;
+}
+ul.outline ol li:before {
+  counter-increment: list;
+  content: "(" counter(list) ") "
+}
+
+.reading a:visited { color: #039; }
+
+.reading h2 {
+  clear: both;
+  counter-increment: week;
+  text-align: center;
+  font-size: 1.25em;
+  background-color: #f6d565;
+  padding: 2.5pt 5pt;
+  margin: 0;
+  border-top: 2px solid #ea2;
+  border-bottom: 2px solid #ea2;
+}
+
+.reading h3 {
+  margin: 0;
+  padding-left: 12.5pt;
+  padding-top: 10pt;
+  padding-bottom: 2.5pt;
+  font-size: 1.08em;
+}
+.reading span.note:before {
+  content: " \2014\a0";
+  color: black;
+}
+
+.reading span.note {
+  font-style: italic;
+  color:#cc0000;
+}
+
+.reading > div {  
+   float: left;
+   width: 50%;
+}
+
+.reading ul {
+   margin: 0;
+   padding: 5pt;
+   counter-reset: list;
+}
+
+.reading li {
+  list-style: none;
+  margin: 2.5pt 0 2.5pt 0;
+  line-height: 1.25em;
+  padding: 5pt 10pt 5pt 25pt;
+  background-color: white;
+  position: relative;
+  counter-increment: list;
+  border: 2px solid white;
+}
+
+
+.reading li:before {
+  content: counter(list) ".";
+  left: 10pt;
+  position: absolute;
+  width: 15pt;
+}
+
+.reading .opt li:before {
+  content: none;
+}
+
+.reading ul.opt {
+  margin-bottom: 10pt;
+  padding-top: 0;
+  list-style: none;
+}
+
+.reading .opt li {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+  text-indent: -15pt;
+  list-style: inherit;
+  font-size: 0.93em;
+  background-color: inherit;
+  color: #222;
+}
+
+.reading ul:before {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.67em;
+  letter-spacing: 1px;
+  color: #808080;
+  margin-left: 2.5pt;
+  line-height: 1em;
+}
+
+.reading ul.opt:before {
+  padding-left:7.5pt;
+  content: "Recommended";
+}
+
+div.reading ul li a {
+  font-weight: bold;
+}
+</style>
+<b>Instructor:</b> Andrew Kwong
+<br>
+<b>Contact:</b> andrew@cs.unc.edu
+<br>
+<b>Class Meetings:</b> Mon/Wed 12:20-1:35PM, FB007
+<br>
+<b>Office Hours</b> By Appointment, in FB340
+<br>
+<a href="docs/comp 790-185 syllabus.pdf">Syllabus</a>
+
+<p> The goal of this course is to give students a broad overview of research topics in the field of computer security. This involves reading and discussing both foundational and recent papers, and conducting a course research project.
+</p>
+
+<h3> Course Structure </h3> Grades will be based upon the following:
+
+<p> <b>Class Participation (20%) </b> </p>
+<p> Students are expected to contribute to class discussions following paper presentations. Students should be able to ask insightful questions and demonstrate that they have read and understand the assigned readings. </p>
+<p> <b>Paper Presentations (20%) </b> </p>
+<p> Students will give conference style talks on assigned papers. They will prepare slides and a 15 minute presentation on the papers.</p>
+<p> <b>Paper Reviews (20%) </b> </p>
+<p> Students will submit mini-reviews on assigned papers to Canvas. </p>
+<p> <b>Course Project (40%) </b> </p>
+<p> Students will conduct original research on a topic related to computer security over the course of the semester. Students will propose a project part-way through the class, and will submit a final report (6-12 pages) by the end of the course. Students will also give a conference style talk on their results during the final week of class. Working in groups is allowed, but a more substantial product is expected when working as a group.</p>
+<a name="list"></a>
+<h3>Reading List</h3>
+
+<div class="reading">
+
+  <a name="week1"></a>
+  <h2>Welcome</h2>
+  <div>
+    <h3>
+      Monday, August 19
+	&mdash; Welcome/Course Overview
+    </h3>
+    <span class="note">
+    <a href="comp790-185/comp790-185-fall24-intro.pdf">Slides</a>
+    </span>
+  
+  </div>
+  <div>
+    <h3>
+      Wednesday, August 21
+	&mdash; Instructor Presents
+    </h3>
+    <span class="note">
+    <a href="comp790-185/comp790-185-lecture2.pdf">Slides</a>
+    </span>
+    
+  </div>
+  
+  <a name="week2"></a>
+  <h2>Binary Exploitation</h2>
+  <div>
+    <h3>
+      Monday, August 26 
+	  &mdash; Stack Smashing
+    </h3>
+    <ul>
+      <li>
+        <a href="https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf">Smashing The Stack For Fun And Profit</a>.
+	Aleph One. Phrack 49(14), Nov. 1996.
+	</li>
+      <li>
+        <a href="https://www.usenix.org/legacy/publications/library/proceedings/sec98/full_papers/cowan/cowan.pdf">StackGuard: Automatic Adaptive Detection and Prevention of Buffer-Overflow Attacks</a>. USENIX Security 1998.
+      </li>
+    </ul>
+    
+  </div>
+  <div>
+    <h3>
+      Wednesday, August 28
+	  &mdash; Advanced Pwning
+    </h3>
+    <ul>
+      <li>
+        <a href="https://hovav.net/ucsd/dist/geometry.pdf">The Geometry of Innocent Flesh on the Bone:
+Return-into-libc without Function Calls (on the x86)</a>.
+        CCS 2007
+      </li>
+	  <li>
+        <a href="https://www.scs.stanford.edu/brop/bittau-brop.pdf">Hacking Blind</a>.
+        Oakland 2014
+      </li>
+     
+    </ul>
+
+  </div>
+  
+  <a name="week3"></a>
+  <h2>Nation State Attacks</h2>
+  <div>
+    <h3>
+      Monday, September 2
+    </h3>
+    <span class="note">Labor Day-No Class.</span>
+    
+  </div>
+  <div>
+    <h3>
+      Wednesday, September 4
+      &mdash; Russia
+    </h3>
+    <ul>
+      <li>
+        <a href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2016/05/20081514/E-ISAC_SANS_Ukraine_DUC_5.pdf">Analysis of the Cyber Attack on the Ukrainian Power Grid</a>.
+      </li>
+      <li>
+        <a href="https://ensa.fi/papers/russia_usenix_22.pdf">Network Responses to Russia’s Invasion of Ukraine in 2022:
+A Cautionary Tale for Internet Freedom</a>.
+        USENIX Security 2022.
+      </li>
+    </ul>
+    
+  </div>
+  <a name="week4"></a>
+  <h2>Side-Channels</h2>
+  <div>
+    <h3>
+      Monday, September 9
+
+    </h3>
+    <ul>
+      <li>
+        <a href="https://people.eecs.berkeley.edu/~daw/papers/ssh-use01.pdf">Timing Analysis of Keystrokes and Timing Attacks on SSH</a>.
+        USENIX Security 2001.
+      </li>
+      <li>
+        <a href="https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/yarom">FLUSH+RELOAD: A High Resolution, Low Noise, L3 Cache Side-Channel Attack</a>.
+        USENIX Security 2014.
+      </li>
+    </ul>
+    
+  </div>
+  <div>
+    <h3>
+      Wednesday, September 11
+	  
+    </h3>
+    <ul>
+      <li>
+        <a href="https://hovav.net/ucsd/dist/cloudsec.pdf">Hey, You, Get Off of My Cloud: Exploring Information Leakage in Third-Party Compute Clouds</a>.
+        Ristenpart Tromer, Shacham, and Savage.
+        CCS&nbsp;2009.
+      </li>
+      <li>
+        <a href="https://meltdownattack.com/">Spectre attacks: Exploiting Speculative Execution</a>.
+        Oakland 2019.
+      </li>
+    </ul>
+    
+  </div>
+  <a name="week5"></a>
+  <h2>Cyber-Physical Systems</h2>
+  <div>
+    <h3>
+      Monday, September 16
+	&mdash; Automotive Security
+    </h3>
+    <ul>
+      <li>
+        <a href="http://feihu.eng.ua.edu/NSF_CPS/year1/w9_1.pdf">Experimental Security Analysis of a Modern Automobile</a>.
+       Oakland 2010.
+      </li>
+      <li>
+        <a href="http://www.autosec.org/pubs/cars-usenixsec2011.pdf">Comprehensive Experimental Analyses of Automotive Attack Surfaces</a>.
+        USENIX Security 2011.
+      </li>
+    </ul>
+    
+  </div>
+  <div>
+    <h3>
+      Wednesday, September 18
+	  
+    </h3>
+    <ul>
+      <li>
+        <a href="https://radsec.org/">Security Analysis of a Full-Body Scanner </a>.
+        USENIX Security 2014.
+      </li>
+      <li>
+        <a href="https://www.secure-medicine.org/hubfs/public/publications/icd-study.pdf">Pacemakers and Implantable Cardiac Defibrillators: Software Radio Attacks and Zero-Power Defenses</a>.
+        Oakland 2008.
+      </li>
+    </ul>
+    
+  </div>
+  
+
+  <a name="week6"></a>
+  <h2>Web Security</h2>
+  <div>
+    <h3>
+      Monday, September 23
+    </h3>
+    <span class="note">Well-Being day-No Class.</span>
+
+    
+  </div>
+  <div>
+    <h3>
+      Wednesday, September 25
+      &mdash; Sandboxing
+    </h3>
+    <ul>
+      <li>
+        <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/34913.pdf">Native Client: A Sandbox for Portable, Untrusted x86 Native Code</a>.
+        Oakland 2009.
+      </li>
+      <li>
+        <a href="https://www.usenix.org/conference/usenixsecurity20/presentation/narayan">Retrofitting Fine Grain Isolation in the Firefox Renderer</a>.
+        USENIX Security 2020.
+      </li>
+    </ul>
+    
+  </div>
+  
+  
+  <a name="week7"></a>
+  <h2>Memory</h2>
+  <div>
+    <h3>
+      Monday, September 30
+	  &mdash; Rowhammer
+    </h3>
+	<ul>
+      <li>
+        <a href="https://googleprojectzero.blogspot.com/2015/03/exploiting-dram-rowhammer-bug-to-gain.html">Exploiting the DRAM rowhammer bug to gain kernel privileges</a>.
+        Google  blog post, 2015.
+      </li>
+      <li>
+        <a href="https://download.vusec.net/papers/trrespass_sp20.pdf">TRRespass: Exploiting the Many Sides of Target Row Refresh</a>.
+        Oakland 2020.
+      </li>
+    </ul>
+   
+    
+  </div>
+  <div>
+    <h3>
+      Wednesday, October 2
+	  &mdash; Disturbance Effects/Forensics
+    </h3>
+    <ul>
+      <li>
+        <a href="https://people.inf.ethz.ch/omutlu/pub/RowPress_isca23.pdf">Row Press</a>.
+        ISCA 2023
+      </li>
+      <li>
+        <a href="https://www.usenix.org/legacy/event/sec08/tech/full_papers/halderman/halderman.pdf">Lest We Remember: Cold Boot Attacks on Encryption Keys</a>.
+        USENIX Security 2008.
+      </li>
+    </ul>
+    
+  </div>
+  
+  
+  <a name="week8"></a>
+  <h2>Course Project Proposal Presentations</h2>
+  <div>
+    <h3>
+      Monday, October 7
+      
+    </h3>
+     &mdash; Proposal Presentations
+    </div>
+  <div>
+    <h3>
+      Wednesday, October 9
+     
+    </h3>
+     &mdash; Proposal Presentations Continued
+  </div>
+  
+  <a name="week9"></a>
+  <h2>Machine Learning</h2>
+  <div>
+    <h3>
+      Monday, October 14
+    </h3>
+    <ul>
+      <li>
+        <a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Eykholt_Robust_Physical-World_Attacks_CVPR_2018_paper.pdf">Robust Physical-World Attacks on Deep Learning Visual Classification</a>.
+       CVPR 2018
+      </li>
+	  <li>
+        <a href="https://nicholas.carlini.com/papers/2017_sp_nnrobustattacks.pdf">Towards Evaluating the Robustness of Neural Networks</a>.
+       Oakland 2017.
+      </li>
+    </ul>
+
+  </div>
+  <div>
+    <h3>
+      Wednesday, October 16
+
+    </h3>
+    <ul>
+      <li>
+        <a href="https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting">Extracting Training Data from Large Language Models</a>.
+        USENIX Security 2021.
+      </li>
+      <li>
+        <a href="https://www.usenix.org/system/files/sec22summer_arp.pdf">Dos and Don'ts of Machine Learning in Computer Security</a>.
+        USENIX Security 2022.
+      </li>
+    </ul>
+    
+  </div>
+
+  <a name="week10"></a>
+  <h2>Botnets/Spam</h2>
+  <div>
+    <h3>
+      Monday, October 21
+      &mdash; Botnets
+    </h3>
+    <ul>
+	  <li>
+        <a href="https://dl.acm.org/doi/pdf/10.1145/1653662.1653738?casa_token=g18z5ZbORiYAAAAA:H5e87z1beSq2qI3Ro6Lwt5ngcC6IG888IWQvk3-cI8z10Y1BicDwbNj8RLBjeXFTWrtFkogtKTwj0w">Your Botnet is My Botnet: Analysis of a Botnet Takeover</a>.
+        CCS 2009.
+      </li>
+	  <li>
+        <a href="https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-antonakakis.pdf">Understanding the Mirai Botnet</a>.
+	USENIX Security 2017.
+      </li>
+      
+    </ul>
+    
+  </div>
+  <div>
+    <h3>
+      Wednesday, October 23
+      &mdash; Spam
+    </h3>
+    <ul>
+        <li>
+        <a href="https://www.usenix.org/system/files/sec19-ho.pdf">Detecting and Characterizing LAteral Phishing at Scale</a>.
+        USENIX Security 2019.
+      </li>
+      <li>
+        <a href="https://www.cs.uic.edu/~ckanich/papers/spamalytics.pdf">Spamalytics: An Empirical Analysis
+of Spam Marketing Conversion</a>.
+        CCS 2008.
+      </li>
+    </ul>
+    
+  </div>
+  
+  <a name="week11"></a>
+  <h2>Crypto Fails/Privacy</h2>
+  <div>
+    <h3>
+      Monday, October 28
+      &mdash; Real World Cryptography
+    </h3>
+    <ul>
+      <li>
+        <a href="https://weakdh.org/imperfect-forward-secrecy-ccs15.pdf">Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice</a>.
+        CCS 2015.
+      </li>
+      <li>
+        <a href="https://dl.acm.org/doi/pdf/10.1145/3133956.3133969?casa_token=9rr_WkHkEbEAAAAA:SQHUZlDyvkTHDgPMIKHiRMps7qjW8dLA0CC66XzPE56D9LFBvy7JGrgDjVr0A-KcQdHb8q9UF85eHA">The Return of Coppersmith’s Attack: Practical Factorization of Widely Used RSA Moduli</a>.
+       CCS 2017.
+      </li>
+    </ul>
+    
+  </div>
+  <div>
+    <h3>
+      Wednesday, October 30
+      &mdash; Privacy
+    </h3>
+    <ul>
+      <li>
+        <a href="https://dl.acm.org/doi/pdf/10.1145/2785956.2787502">BlindBox: Deep Packet Inspection over Encrypted Traffic</a>.
+        SIGCOMM 2015.
+      </li>
+	  <li>
+        <a href="http://zerocash-project.org/media/pdf/zerocash-oakland2014.pdf">Zerocash: Decentralized Anonymous Payments from Bitcoin</a>.
+        Oakland 2014.
+      </li>
+    </ul>
+    
+  </div>
+  
+  <a name="week12"></a>
+  <h2>Human Factors</h2>
+  <div>
+    <h3>
+      Monday, November 4
+      &mdash; Usability
+    </h3>
+    <ul>
+      <li>
+        <a href="https://people.eecs.berkeley.edu/~tygar/papers/Why_Johnny_Cant_Encrypt/USENIX.pdf">Why Johnny Can't Encrypt: A Usability Evaluation of PGP 5.0.</a>.
+        USENIX Security 1999
+      </li>
+      <li>
+        <a href="https://www.usenix.org/system/files/conference/usenixsecurity13/sec13-paper_akhawe.pdf">Alice in Warningland: A Large-Scale Field Study of Browser Security Warning Effectiveness</a>.
+USENIX Security 2013.
+      </li>
+    </ul>
+    
+  </div>
+  <div>
+    <h3>
+      Wednesday, November 6
+      &mdash; Passwords
+    </h3>
+    <ul>
+      <li>
+        <a href="https://dl.acm.org/doi/pdf/10.1145/1978942.1979321?casa_token=K9Bs2l9t3-0AAAAA:bztHxJgNMuU1DH7HWslWWM3bVsHNIK-mDLk2NyaDUL01zQD1SBd3NljJlCNxt8LyAZlIQmyzSwuzfQ">Of passwords and People: Measuring the Effect of Password-composition Policies</a>.
+        CHI 2011.
+      </li>
+      <li>
+        <a href="https://www.cl.cam.ac.uk/~fms27/papers/2012-BonneauHerOorSta-password--oakland.pdf">The Quest to Replace Passwords: A Framework for Comparative Evaluation of Web Authentication Schemes</a>.
+        Oakland 2012.
+      </li>
+           
+    </ul>
+    </div>
+
+  <a name="week13"></a>
+  <h2>Tracking</h2>
+  <div>
+    <h3>
+      Monday, November 11
+      &mdash; Anonymous Browsing
+    <ul>
+      <li>
+        <a href="https://apps.dtic.mil/sti/pdfs/ADA465464.pdf">Tor: The Second-Generation Onion Router</a>.
+        USENIX Security 2004.
+      </li>
+      <li>
+        <a href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=af6264bbfd3a4bc68992e5311f61ce8269a21f45">How Unique Is Your Web Browser?</a>.
+        PETS 2010
+      </li>
+    </ul>
+    
+  </div>
+  <div>
+    <h3>
+      Wednesday, November 13
+      &mdash; Web/Device Tracking
+    </h3>
+    <ul>
+      <li>
+        <a href="https://dl.acm.org/doi/pdf/10.1145/2660267.2660347?casa_token=7JHSuVDhyhUAAAAA:oXHWE0YE32rbMB1tBBChE81UkQAzHKY2Uc4A62Cee27W9fGREyYyIW-IVM4eiU9Svw2t9W_yj07T-g">The Web Never Forgets: Persistent Tracking Mechanisms in the Wild</a>.
+        CCS 2014.
+      </li>
+      <li>
+        <a href="https://dl.acm.org/doi/pdf/10.1145/3319535.3354198">Watching You Watch: The Tracking Ecosystem of Over-the-Top TV Streaming Devices</a>.
+        CCS 2019.
+      </li>
+           
+    </ul>
+    
+  </div>
+
+  <a name="week14"></a>
+  <h2>Network/Election Security</h2>
+  <div>
+    <h3>
+      Monday, November 18
+    </h3>
+    <ul>
+      <li>
+        <a href="https://dl.acm.org/doi/pdf/10.1145/2663716.2663755">The Matter of Heartbleed</a>.
+        IMC 2014.
+      </li>
+      <li>
+        <a href="https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_cao.pdf">Off-Path TCP Exploits: Global Rate Limit Considered Dangerous</a>.
+        USENIX Security 2016.
+      </li>
+            
+    </ul>
+  </div>
+  <div>
+    <h3>
+      Wednesday, November 20
+    </h3>
+    <ul>
+
+            <li>
+        <a href="https://www.usenix.org/system/files/sec22-halderman.pdf">The Antrim County 2020 Election Incident: An Independent Forensic Investigation</a>.
+        USENIX Security 2022.
+      </li>
+
+     <li>
+        <a href="https://www.usenix.org/system/files/sec21-consolvo.pdf">“Why wouldn’t someone think of democracy as a target?”: Security practices & challenges of people involved with U.S. political campaigns</a>.
+        USENIX Security 2021.
+      </li>
+        </ul>
+  </div>
+
+  <a name="week15"></a>
+  <h2>Course Project Presentations</h2>
+  <div>
+    <h3>
+      Monday, November 25
+
+    </h3>
+    &mdash; Final Presentations
+  </div>
+  <div>
+    <h3>
+      Wednesday, November 27
+    </h3>
+    <span class="note">Thanksgiving-No Class.</span>
+  </div>
+
+  <a name="week16"></a>
+  <h2>Course Project Presentations continued</h2>
+  <div>
+    <h3>
+      Monday, December 2
+    </h3>
+     &mdash; Final Presentations
+  </div>
+  <div>
+    <h3>
+      Wednesday, December 4
+    </h3>
+   &mdash; Final Presentations 
+  </div>
+</div>
+
+<br style="clear:both"/>
+
+
+    </div>
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '52d47937eddd5b3794000063');
+        t.src = '//web.archive.org/web/20170701211815/https://secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+  </body>
+</html>
+<!--
+     FILE ARCHIVED ON 21:18:15 Jul 01, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:30:58 Aug 17, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 197.268
+  exclusion.robots: 0.123
+  exclusion.robots.policy: 0.113
+  cdx.remote: 0.058
+  esindex: 0.008
+  LoadShardBlock: 146.58 (3)
+  PetaboxLoader3.datanode: 68.678 (4)
+  load_resource: 46.726
+  PetaboxLoader3.resolve: 27.516
+-->
