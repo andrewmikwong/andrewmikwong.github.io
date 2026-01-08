@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+  <head><script type="text/javascript" src="/_static/js/bundle-playback.js?v=1WaXNDFE" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="/_static/js/ruffle.js" defer="true"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://www.eecs.umich.edu/courses/eecs588/readings.html","20170701211815","https://web.archive.org/","web","/_static/",
+	      "1498943895");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <title>COMP 590 - 184 - Schedule</title>
+    <meta charset="utf-8">
+    <link href="/web/20170701211815cs_/https://www.eecs.umich.edu/courses/eecs588/static/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="top">
+      <h1>Hardware Security and Side-Channels</h1>
+      <h2>COMP 590 &ndash; 184 &ndash; Spring 2026</h2>
+ 
+    </div>
+    <div id="main">
+      <style>
+ul.resp {
+  margin-bottom: 0;
+}
+ul.resp > li {
+  margin: 8pt;
+}
+
+ul.outline {
+  margin-top: 6pt;
+  counter-reset: list;
+  list-style-type: upper-alpha;
+}
+ul.outline > li {
+  margin: 6pt;
+}
+ul.outline ol li:first-child {
+  margin-top: 4pt;
+}
+
+ul.outline ol li {
+  list-style: none;
+}
+ul.outline ol li:before {
+  counter-increment: list;
+  content: "(" counter(list) ") "
+}
+
+.reading a:visited { color: #039; }
+
+.reading h2 {
+  clear: both;
+  counter-increment: week;
+  text-align: center;
+  font-size: 1.25em;
+  background-color: #f6d565;
+  padding: 2.5pt 5pt;
+  margin: 0;
+  border-top: 2px solid #ea2;
+  border-bottom: 2px solid #ea2;
+}
+
+.reading h3 {
+  margin: 0;
+  padding-left: 12.5pt;
+  padding-top: 10pt;
+  padding-bottom: 2.5pt;
+  font-size: 1.08em;
+}
+.reading span.note:before {
+  content: " \2014\a0";
+  color: black;
+}
+
+.reading span.note {
+  font-style: italic;
+  color:#cc0000;
+}
+
+.reading > div {  
+   float: left;
+   width: 50%;
+}
+
+.reading ul {
+   margin: 0;
+   padding: 5pt;
+   counter-reset: list;
+}
+
+.reading li {
+  list-style: none;
+  margin: 2.5pt 0 2.5pt 0;
+  line-height: 1.25em;
+  padding: 5pt 10pt 5pt 25pt;
+  background-color: white;
+  position: relative;
+  counter-increment: list;
+  border: 2px solid white;
+}
+
+
+.reading li:before {
+  content: counter(list) ".";
+  left: 10pt;
+  position: absolute;
+  width: 15pt;
+}
+
+.reading .opt li:before {
+  content: none;
+}
+
+.reading ul.opt {
+  margin-bottom: 10pt;
+  padding-top: 0;
+  list-style: none;
+}
+
+.reading .opt li {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+  text-indent: -15pt;
+  list-style: inherit;
+  font-size: 0.93em;
+  background-color: inherit;
+  color: #222;
+}
+
+.reading ul:before {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.67em;
+  letter-spacing: 1px;
+  color: #808080;
+  margin-left: 2.5pt;
+  line-height: 1em;
+}
+
+.reading ul.opt:before {
+  padding-left:7.5pt;
+  content: "Recommended";
+}
+
+div.reading ul li a {
+  font-weight: bold;
+}
+</style>
+<b>Instructor:</b> Andrew Kwong
+<br>
+<b>Contact:</b> andrew@cs.unc.edu
+<br>
+<b>Class Meetings:</b> Tuesday/Thursday 2:00-3:15PM, Wilson Hall-Rm 0128
+<br>
+<b>Office Hours</b> TBA
+<br>
+<a href="comp590-184/syllabus-sp26.pdf">Syllabus</a>
+
+<p> The goal of this course is to prepare students for a world where hardware vulnerabilities can leak secrets to software-only attackers. Students will learn how to conduct and defend against state-of-the-art side-channel attacks on real hardware through a combination of both lectures and completing lab programming assignments. This course will practically demonstrate the pitfalls of widely adopted modern hardware design decisions, and will prepare students to design hardware and software resilient against such attacks.
+
+</p>
+
+<h3> Course Structure </h3> Grades will be based upon the following:
+
+<p> <b>Lab Assignments (80%) </b> </p>
+<p> Students will complete programming-oriented lab assignments that are designed to guide them towards carrying out real-world attacks on hardware. There will be 5 to 6 in total, focused on providing students with an opportunity to put theory into practice. </p>
+
+<p> <b>Final Exam (20%) </b> </p>
+<p> Students will sit for a final exam that will test their understanding of the course’s high level concepts, both from the lab assignments and the lectures. </p>
+
+<h3> Acknowledgements </h3> This course is based upon MIT's <a href="https://shd.mit.edu">6.5950</a> course. Much thanks to Mengjia Yan and her course staff for their hard work on starting this!
+<a name="list"></a>
+<h3>Schedule</h3>
+
+<div class="reading">
+
+  <a name="week1"></a>
+  <h2>Week 1</h2>
+  <div>
+    <h3>
+    </h3>
+  
+  </div>
+  <div>
+    <h3>
+      Thursday, January 8 <br>
+      &mdash; Introduction
+    </h3>
+ <!--   <span class="note">
+    <a href="comp790-149/comp790-lecture2.pdf">Slides</a>
+    </span>
+ -->
+    
+  </div>
+  
+  <a name="week2"></a>
+  <h2>Week 2</h2>
+  <div>
+    <h3>
+      Tuesday, January 13  <br>
+      &mdash; 
+    </h3>
+  </div>
+  <div>
+    <h3>
+      Thursday, January 15<br>
+	  &mdash; 
+    </h3>
+    
+
+  </div>
+  
+  <a name="week3"></a>
+  <h2>Week 3</h2>
+  <div>
+    <h3>
+      Tuesday, January 20<br>
+      	&mdash; 
+    </h3>
+        
+  </div>
+  <div>
+    <h3>
+      Thursday, January 22<br>
+      &mdash; 
+    </h3>
+    
+  </div>
+  <a name="week4"></a>
+  <h2>Week 4</h2>
+  <div>
+    <h3>
+      Tuesday, January 27<br>
+            &mdash; 
+
+    </h3>
+    
+  </div>
+  
+  <div>
+    <h3>
+      Thursday, January 29<br>
+      &mdash; 
+    </h3>
+    
+  </div>
+  <a name="week5"></a>
+  <h2>Week 5</h2>
+  <div>
+    <h3>
+      Tuesday, February 3<br>
+      &mdash;
+    </h3>
+       
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, February 5<br>
+      	&mdash; 
+    </h3>
+    
+  </div>
+  
+
+  <a name="week6"></a>
+  <h2>Week 6</h2>
+  <div>
+    <h3>
+      Tuesday, February 10<br>
+
+    </h3>
+  </div>
+  <div>
+    <h3>
+      Thursday, February 12<br>
+
+    </h3>
+    
+  </div>
+  
+  
+  <a name="week7"></a>
+  <h2>Week 7</h2>
+  <div>
+    <h3>
+      Tuesday, February 17<br>
+      &mdash; 
+    </h3>
+
+   
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, February 19<br>
+	  &mdash;
+    </h3>
+    
+    
+  </div>
+  
+  
+  <a name="week8"></a>
+  <h2>Week 8</h2>
+  <div>
+    <h3>
+      Tuesday, February 24<br>
+     &mdash; 
+      
+    </h3>
+    </div>
+  <div>
+    <h3>
+      Thursday, February 26<br>
+     &mdash;
+     
+    </h3>
+    
+  </div>
+  
+  <a name="week9"></a>
+  <h2>Week 9</h2>
+  <div>
+    <h3>
+      Tuesday, March 3<br>
+ &mdash; 
+    </h3>
+  </div>
+  <div>
+    <h3>
+      Thursday, March 5<br>
+           &mdash; 
+    </h3>
+    
+  </div>
+  
+  <a name="week10"></a>
+  <h2>Week 10</h2>
+  <div>
+    <h3>
+      Tuesday, March 10<br>
+      &mdash; 
+    </h3>
+
+  </div>
+  <div>
+    <h3>
+      Thursday, March 12<br>
+&mdash; 
+    </h3>
+
+  </div>
+
+  <a name="week11"></a>
+  <h2>Week 11</h2>
+  <div>
+    <h3>
+      Tuesday, March 17<br>
+      
+    </h3>
+<span class="note">Spring Break. No Class.</span>
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, March 19<br>
+    </h3>
+    <span class="note">Spring Break. No Class.</span>
+    
+  </div>
+  
+  <a name="week12"></a>
+  <h2>Week 12</h2>
+  <div>
+    <h3>
+      Tuesday, March 24<br>
+      &mdash; 
+    </h3>
+   
+  </div>
+  <div>
+    <h3>
+      Thursday, March 26<br>
+&mdash; 
+    </h3>
+    
+    </div>
+
+  <a name="week13"></a>
+  <h2>Week 13</h2>
+  <div>
+    <h3>
+      Tuesday, March 31<br>
+      &mdash; 
+     </h3>
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, April 2<br>
+
+    </h3>
+       <span class="note">Well-being day. No Class.</span>
+  </div>
+
+  <a name="week14"></a>
+  <h2>Week 14</h2>
+  <div>
+    <h3>
+      Tuesday, April 7<br>
+&mdash; 
+    </h3>
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, April 9<br>
+&mdash; 
+    </h3>
+    
+  </div>
+
+  <a name="week15"></a>
+  <h2>Week 15</h2>
+  <div>
+    <h3>
+      Tuesday, April 14<br>
+           &mdash;
+    </h3>
+    
+  </div>
+  <div>
+    <h3>
+      Thursday, April 16<br>
+&mdash;
+    </h3>
+    
+
+  </div>
+
+  <a name="week16"></a>
+  <h2>Week 16</h2>
+  <div>
+    <h3>
+      Tuesday, April 21<br>
+           &mdash; 
+    </h3>
+
+  </div>
+   <div>
+    <h3>
+      Thursday, April 23<br>
+            &mdash; 
+    </h3>    
+    
+  </div>
+</div>
+
+<br style="clear:both"/>
+
+
+    </div>
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '52d47937eddd5b3794000063');
+        t.src = '//web.archive.org/web/20170701211815/https://secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+  </body>
+</html>
+<!--
+     FILE ARCHIVED ON 21:18:15 Jul 01, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:30:58 Aug 17, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 197.268
+  exclusion.robots: 0.123
+  exclusion.robots.policy: 0.113
+  cdx.remote: 0.058
+  esindex: 0.008
+  LoadShardBlock: 146.58 (3)
+  PetaboxLoader3.datanode: 68.678 (4)
+  load_resource: 46.726
+  PetaboxLoader3.resolve: 27.516
+-->
